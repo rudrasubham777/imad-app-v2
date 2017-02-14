@@ -13,12 +13,12 @@ app.get('/article-one',function (req,res){
     res.send('Article one responded and will be executed');
     });
     
-app.get('/article-one',function (req,res){
-    res.send('Article one responded and will be executed');
+app.get('/article-two',function (req,res){
+    res.send('Article two responded and will be executed');
     });
     
- app.get('/article-one',function (req,res){
-    res.send('Article one responded and will be executed');
+ app.get('/article-three',function (req,res){
+    res.send('Article three responded and will be executed');
     });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
