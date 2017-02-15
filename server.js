@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articles = { 
 'article-one':{
-   title:'Article one |Rudra Pratap',
+   title:'Article-one |Rudra Pratap',
    heading: 'Article One',
    date:'feb 14,2016',
    content: `<p>
@@ -29,7 +29,7 @@ var articles = {
    
 },
 'article-two':{
-    title:'Article two |Rudra Pratap',
+    title:'Article-two |Rudra Pratap',
    heading: 'Article Two',
    date:'feb 15,2016',
    content: `<p>
@@ -41,7 +41,7 @@ var articles = {
    
 },
 'article-three': {
-     title:'Article three |Rudra Pratap',
+     title:'Article-three |Rudra Pratap',
    heading: 'Article Three',
    date:'feb 16,2016',
    content: `<p>
