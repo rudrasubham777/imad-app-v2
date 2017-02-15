@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles ={ 
-`article-one':{
+'article-one':{
    title:'Article one |Rudra Pratap',
    heading: 'Article One',
    date:'feb 14,2016',
@@ -28,7 +28,7 @@ var articles ={
             </p>`
    
 },
-`article-two':{
+'article-two':{
     title:'Article two |Rudra Pratap',
    heading: 'Article Two',
    date:'feb 15,2016',
@@ -40,7 +40,7 @@ var articles ={
              
    
 },
-`article-three': {
+'article-three': {
      title:'Article three |Rudra Pratap',
    heading: 'Article Three',
    date:'feb 16,2016',
@@ -88,7 +88,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-    var articleName = req.parans.articleName; 
+    var articleName = req.params.articleName; 
    res.send(createTemplate(articles[articleName]));
     });
     
