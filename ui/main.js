@@ -1,6 +1,6 @@
 var button = document.getElementById('counter');
 
-button.onclick= function ()
+button.onclick = function ()
 {   
     var request = new XMLHttpRequest();
     
@@ -20,10 +20,9 @@ button.onclick= function ()
     
 };
 
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
-submit.onclick= function () {
+submit.onclick = function () {
     
     var request = new XMLHttpRequest();
     
@@ -42,7 +41,8 @@ ul.innerHTML = list;
         }
     };
    
-   
+   var nameInput = document.getElementById('name');
+var name = nameInput.value;
     request.open('GET' , 'http://rudrasubham777.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
      
